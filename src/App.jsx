@@ -1,12 +1,9 @@
-// import { useState } from 'react'
-import './App.css'
+import VideoSection from './components/VideoSection/VideoSection'
 
-function App() {
-
-
-  return (
+function App(){
+  return(
     <>
-      
+      <VideoSection src='/public/video/video.mp4'/>
     </>
   )
 }
