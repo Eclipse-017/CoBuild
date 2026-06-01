@@ -7,8 +7,8 @@ function VideoSection({
     type="video/mp4", desc="The Planets In Our Solar System"}){
 
     return (
-        <div className='video-container'>
-            <section className='video-section'>
+        <section className='video-container'>
+            <div className='video-section'>
                 <div className='left'>
                     <figure>
                         <video autoPlay muted loop controls>
@@ -32,8 +32,8 @@ function VideoSection({
                         and interact within the solar system.
                     </p>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 
 }
