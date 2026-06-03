@@ -7,7 +7,7 @@ function VideoSection({
     type="video/mp4", desc="The Planets In Our Solar System"}){
 
     return (
-        <section className='video-container'>
+        <section className='main-section video-container'>
             <div className='video-section'>
                 <div className='left'>
                     <figure>
@@ -22,9 +22,9 @@ function VideoSection({
                 </div>
 
                 <div className='right'>
-                    <h2 >How Planetary Data Helps Us Understand Space</h2>
+                    <h2 className='section-header'>How Planetary Data Helps Us Understand Space</h2>
 
-                    <p>
+                    <p className='section-description'>
                         Planetary science goes beyond images. Comparing
                         <strong> mass</strong>, <strong> diameter</strong>, 
                         <strong> gravity</strong>, and <strong>density</strong>, 

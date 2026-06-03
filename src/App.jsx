@@ -1,12 +1,15 @@
 import './App.css'
+import './styles/variables.css'
+import './styles/reset.css'
+import './styles/utilities.css'
+import './styles/queries.css'
+
 import VideoSection from './components/VideoSection/VideoSection'
-import FormSection from './components/FormSection'
 
 function App(){
   return( 
     <>
       <VideoSection src='/public/video/video.mp4'/>
-      <FormSection></FormSection>
     </>
   )
 }
