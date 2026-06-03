@@ -6,3 +6,11 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+button{
+    border-radius: var(--btn-border-raduis);
+}
+
+img, video{
+    border-radius: var(--media-border-raduis);
+}

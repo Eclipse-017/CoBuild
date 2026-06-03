@@ -37,7 +37,6 @@
         width: var(--vid-sec-video-width);
         height: inherit;
         justify-self: center;
-        border-radius: var(--vid-sec-border-raduis);
       }
 
       figcaption{
