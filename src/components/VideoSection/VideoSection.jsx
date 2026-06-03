@@ -22,7 +22,7 @@ function VideoSection({
                 </div>
 
                 <div className='right'>
-                    <h2 className='section-header'>How Planetary Data Helps Us Understand Space</h2>
+                    <h2 className='section-heading'>How Planetary Data Helps Us Understand Space</h2>
 
                     <p className='section-description'>
                         Planetary science goes beyond images. Comparing
