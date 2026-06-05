@@ -70,12 +70,6 @@
                     color: grey;
                     text-align: end;
                 }
-
-                &:has(> .show){
-                    .max-char{
-
-                    }
-                }
             }
         }
 
