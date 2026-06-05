@@ -10,12 +10,12 @@ function TableSection() {
                         used by astronomers and researchers worldwide.
                     </p>
                 </div>
-                <h3 className="caption">Data about the planets in our Solar System (Planetary Facts taken from NASA)</h3>
                 <div className="table-data">
                     <table id="exploredata" cellspacing="0">
+                        <caption className="caption">Data about the planets in our Solar System (Planetary Facts taken from NASA)</caption>
                         <thead>
-                            <tr>
-                                <th scope="col" colspan="2"></th>
+                            <tr className="head-row">
+                                <th scope="col" colspan="2" ></th>
                                 <th>Name</th>
                                 <th>Mass (10 24kg)</th>
                                 <th>Diameter (km)</th>
