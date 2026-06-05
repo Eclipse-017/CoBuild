@@ -52,31 +52,28 @@
             }
             
             .error{
-                /* display: none; */
                 color: red;
                 font-size: var(--form-error-font-size);
                 position: absolute;
                 bottom: -2ch; left: 0px;
-
-                &.show{
-                    display: inline;
-                }
             }
 
             .error-max{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                position: absolute;
+                bottom: -2ch;
+                width: 100%;
                 
                 .max-char{
                     color: grey;
-                    position: absolute;
-                    bottom: -2ch;
+                    text-align: end;
                 }
 
                 &:has(> .show){
                     .max-char{
-                        right: 0px;
+
                     }
                 }
             }

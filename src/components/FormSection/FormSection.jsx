@@ -108,7 +108,7 @@ function FormSection(){
     }
 
     // Tracks if the form has been successfully sent to the server
-    const [isSubmitted, setIsSubmitted] = useState(true);
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     return(
         <section className="main-section form-section">
@@ -161,8 +161,8 @@ function FormSection(){
                                 value={formData.message} onChange={handleChange}></textarea>
 
                             <div className='error-max'>
-                                {errors.message && <span className='error show'>{errors.message}</span>}
-                                <span className='max-char'>{maxChar} characters</span>
+                                {errors.message && <span className='error'>{errors.message}</span>}
+                                <p className='max-char'>{maxChar} characters</p>
                             </div>
                         </div>   
                     </div>
