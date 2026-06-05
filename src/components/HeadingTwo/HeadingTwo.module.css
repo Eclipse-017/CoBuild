@@ -85,7 +85,6 @@
 @media (max-width: 600px){
 
     .heading-container{
-        align-items: end;
 
         --h2-heading-font-size: 6.5cqw;
         --h2-description-font-size: 3.5cqw;
@@ -94,8 +93,9 @@
         
         &.video-heading, &.image-heading, &.table-heading, &.form-heading{
             --h2-text-align: center;
-            --h2-heading-width: 100%;
-            --h2-description-width: 100%;
+            --h2-heading-width: 90%;
+            --h2-description-width: 90%;
+            align-items: center;
         }
     }
 

@@ -33,7 +33,8 @@ function VideoSection({
                             <strong> gravity</strong>, and <strong>density</strong>, 
                             we gain insight into how planets form, behave, 
                             and interact within the solar system.
-                        </>}/>
+                        </>}
+                    />
                 </div>
             </div>
         </section>

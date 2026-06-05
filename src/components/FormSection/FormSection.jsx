@@ -108,7 +108,7 @@ function FormSection(){
     }
 
     // Tracks if the form has been successfully sent to the server
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(true);
 
     return(
         <section className="main-section form-section">
@@ -120,7 +120,7 @@ function FormSection(){
 
             {isSubmitted ?
                 <div className="submission-container">
-                    <HeadingThree 
+                    <HeadingThree className='submission-successful'
                         title="Thank you!" 
                         description="Your message has been successfully submitted. We will get back to you soon."/>
                     

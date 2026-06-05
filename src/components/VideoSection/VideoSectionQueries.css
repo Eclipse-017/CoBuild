@@ -8,7 +8,7 @@
         --vid-sec-border-raduis: 80cqw;
         --vid-sec-video-width: 90%;
 
-        .right{
+        /* .right{
             .heading-container{
                 .section-heading{
                     width: var(--vid-sec-heading-width);
@@ -18,7 +18,7 @@
                     width: var(--vid-sec-description-width);
                 }
             }
-        }
+        } */
     }
 
 }
@@ -27,9 +27,9 @@
 
     .video-section{
         --vid-sec-flex-row-gap: 8cqw;
-        --vid-sec-heading-width: 16ch;
-        --vid-sec-description-width: 35ch;
         --vid-sec-video-width: 100cqw;
+        /* --vid-sec-heading-width: 16ch;
+        --vid-sec-description-width: 35ch; */
     }
 
 }
