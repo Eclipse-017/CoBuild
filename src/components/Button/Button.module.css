@@ -3,7 +3,7 @@
     --btn-min-width-long: 20rem;
     --btn-height: 3rem;
     --btn-padding-inline: 2rem;
-    --btn-border-line: 0.2em;
+    --btn-border-line: 0.08em;
     --btn-border-raduis: 0.8em;
     --btn-bg-color: hsl(219, 78%, 39%);
     --btn-bg-color-hover: hsl(219, 78%, 49%);
@@ -53,7 +53,7 @@ button{
 @media (max-width: 600px){
 
     button{
-        --btn-min-width: auto;
+        --btn-min-width: 6cqw;
         --btn-min-width-long: 100%;
         --btn-height: 10cqw;
         --btn-padding-inline: 5cqw;

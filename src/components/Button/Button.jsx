@@ -1,6 +1,6 @@
 import styles from './Button.module.css'
 
-function Button({children, className = "", onClick, type="submit"}){
+function Button({children, className = "", onClick, type="submit", altBtn}){
 
     const classes = className.split(' ')
         .map(cls => styles[cls] || cls).join(' ')

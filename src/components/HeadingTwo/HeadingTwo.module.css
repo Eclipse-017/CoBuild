@@ -29,11 +29,15 @@
     &.image-heading{
         align-items: center;
         --h2-text-align: center;
+        --h2-heading-width: auto;
+        --h2-description-width: 76ch;
     }
 
     &.table-heading{
         align-items: start;
         --h2-text-align: start;
+        --h2-heading-width: auto;
+        --h2-description-width: 76ch;
     }
 
     &.form-heading{

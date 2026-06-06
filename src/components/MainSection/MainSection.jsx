@@ -1,6 +1,6 @@
 import './MainSection.css'
 
-function Section({className, children}){
+function MainSection({className, children}){
     return(
         <section className={`main-section ${className}`}>
             {children}
@@ -8,4 +8,4 @@ function Section({className, children}){
     )
 }
 
-export default Section
+export default MainSection

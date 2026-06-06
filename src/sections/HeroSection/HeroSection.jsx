@@ -1,4 +1,5 @@
 import './HeroSection.css';
+import Button from '../../components/Button/Button'
 
 function HeroSection() {
   return (
@@ -28,8 +29,8 @@ function HeroSection() {
             </p>
 
             <div className="buttons">
-              <button type="button" className="btn-primary">Explore the Data</button>
-              <button type="button" className="btn-secondary">Contact Us</button>
+              <Button>Explore the Data</Button>
+              <Button className='btn-alt'>Contact Us</Button>
             </div>
           </div>
 

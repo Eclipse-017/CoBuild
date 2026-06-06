@@ -1,14 +1,16 @@
 import './TableSection.css'
+import HeadingTwo from '../../components/HeadingTwo/HeadingTwo';
+import MainSection from '../../components/MainSection/MainSection';
 
 function TableSection() {
     return (
-        <div className="container table-container">
+        <MainSection className="container table-container">
             <section className="tablesection">
                 <div className="table-header">
-                    <h2>Planetary Facts at a Glance</h2>
-                    <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties
-                        used by astronomers and researchers worldwide.
-                    </p>
+                    <HeadingTwo className="table-heading"
+                        title="Planetary Facts at a Glance"
+                        description="Below is a comparative table of major planets in our solar system. The data highlights key physical properties
+                        used by astronomers and researchers worldwide."/>
                 </div>
                 <div className="table-data">
                     <table id="exploredata" cellspacing="0">
@@ -96,7 +98,7 @@ function TableSection() {
                     </table>
                 </div>
             </section>
-        </div>
+        </MainSection>
     )
 }
 
