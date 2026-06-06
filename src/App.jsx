@@ -3,6 +3,8 @@ import './styles/variables.css'
 import './styles/reset.css'
 import './styles/utilities.css'
 import './styles/queries.css'
+import VideoSection from './components/VideoSection/VideoSection'
+import HeroSection from './components/HeroSection/HeroSection'
 
 import VideoSection from './components/VideoSection/VideoSection'
 import ImageSection from './components/imageSection/ImageSection'
@@ -16,6 +18,7 @@ function App() {
       <VideoSection src='/public/video/video.mp4' />
       <ImageSection />
       <TableSection />
+      <HeroSection></HeroSection>
     </>
   )
 }
