@@ -32,15 +32,15 @@ const ImageSection = () => {
           Visual comparisons help highlight how vastly different terrestrial
           planets are from gas giants and ice giants."/>
 
-        <div className="planet-grid">
+        <div className="planet-container">
           {planets.map((planet, index) => (
             <figure
               key={index} className="img-card"
             >
                   <img
-                    src={planet.image}
-                    alt={planet.planet}
-                    className="planet-img"
+                  src={planet.image}
+                  alt={planet.planet}
+                  className="planet-img"
                 
                 />
               <div className="planet-details">
@@ -48,13 +48,6 @@ const ImageSection = () => {
                 <div>Distance from Sun: {planet.distanceFromSun}</div>
               </div>
             </figure>
-            
-            // <PlanetCard
-            //   className="img-card"
-            //   src={planet.image}
-            //   alt={planet.planet}
-            //   name={planet.planet}
-            //   distance={planet.distanceFromSun}/>
           ))}
         </div>
         <figcaption className="img-figcaption">

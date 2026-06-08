@@ -9,37 +9,40 @@
 
     --planet-card-trans-duration: 0.1s;
     --planet-card-trans-motion: ease-in-out;
+
+    --planet-card-aspect-ratio: 1/0.9;
+
+    --planet-card-image-width: 100cqw;
+    --planet-card-image-height: 75cqh;
+    --planet-card-image-border-radius: 0px;
+    
+    --planet-card-info-width: 100cqw;
+    --planet-card-info-height: 25cqh;
+
+    --planet-card-info-name-font-size: 4.5cqw;
+    --planet-card-info-distance-font-size: 3.5cqw;
+
+    --planet-card-info-translateY: -45cqh;
 }
 
 .planet-card{
     background-color: transparent;
-    aspect-ratio: 1/0.9;
+    aspect-ratio: var(--planet-card-aspect-ratio);
     container: planet-card-container / size;
     overflow: hidden;
-
+    
     &:hover{
-        .planet-figure{
-            .planet-image-container{
-                height: 100cqh;
-                border-radius: var(--planet-card-border-radius)
-            }
+        --planet-card-image-height: 100cqh;
+        --planet-card-image-border-radius: var(--planet-card-border-radius);
 
-            .planet-info{
-                width: 90cqw;
-                height: 40cqh;
-                border-radius: var(--planet-card-border-radius);
-                transform: translateY(-45cqh);
+        --planet-card-info-width: 90cqw;
+        --planet-card-info-height: 40cqh;
 
-                .planet-name{
-                    font-size: 7cqw;
-                    color: var(--heading-clr);
-                }
-
-                .planet-distance{
-                    font-size: 6cqw;
-                    color: var(--heading-clr);
-                }
-            }
+        --planet-card-info-name-font-size: 7cqw;
+        --planet-card-info-distance-font-size: 6cqw;
+        
+        .planet-figure .planet-info{
+            transform: translateY(var(--planet-card-info-translateY));
         }
     }
     
@@ -49,8 +52,9 @@
         
         .planet-image-container{
             background-color: var(--planet-card-bg-clr);
-            width: 100cqw;
-            height: 75cqh;
+            width: var(--planet-card-image-width);
+            height: var(--planet-card-image-height);
+            border-radius: var(--planet-card-image-border-radius);
 
             transition: all 
                 var(--planet-card-trans-duration) 
@@ -65,9 +69,10 @@
         }
         
         .planet-info{
-            background-color: var(--planet-card-info-bg-clr);;
-            width: 100cqw;
-            height: 25cqh;
+            background-color: var(--planet-card-info-bg-clr);
+            border-radius: var(--planet-card-image-border-radius);
+            width: var(--planet-card-info-width);
+            height: var(--planet-card-info-height);
             display: flex;
             flex-direction: column;
             padding-block: var(--planet-card-block-spacing);
@@ -81,14 +86,12 @@
                 var(--planet-card-trans-motion);
 
             .planet-name{
-                font-size: 4.5cqw;
+                font-size: var(--planet-card-info-name-font-size);
                 color: var(--heading-clr);
             }
-
+            
             .planet-distance{
-                display: flex;
-                align-items: center;
-                font-size: 3.5cqw;
+                font-size: var(--planet-card-info-distance-font-size);
                 color: var(--heading-clr);
             }
 

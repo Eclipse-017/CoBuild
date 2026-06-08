@@ -81,7 +81,7 @@
 
     .heading-container{
         --h2-heading-font-size: 3.5dvw;
-        --h2-description-font-size: 1.8dvw;
+        --h2-description-font-size: 1.6dvw;
         
         &.video-heading{
             --h2-heading-width: auto;
@@ -96,9 +96,16 @@
     .heading-container{
 
         --h2-heading-font-size: 6.5cqw;
-        --h2-description-font-size: 3.5cqw;
+        --h2-description-font-size: 3.3cqw;
 
         --h2-heading-row-gap: 2cqw;
+        
+        &.video-heading, &.image-heading, &.table-heading, &.form-heading{
+            --h2-text-align: center;
+            --h2-heading-width: 90%;
+            --h2-description-width: 90%;
+            align-items: center;
+        }
         
         &.video-heading, &.image-heading, &.table-heading, &.form-heading{
             --h2-text-align: center;

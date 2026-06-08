@@ -16,10 +16,10 @@ function App() {
       {/* <HeroSection /> */}
 
       <main>
-        {/* <VideoSection src='/public/video/video.mp4'/> */}
+        <VideoSection src='/public/video/video.mp4'/>
         <ImageSection />
-        {/* <TableSection /> */}
-        {/* <FormSection /> */}
+        <TableSection />
+        <FormSection />
       </main>
 
       {/* FOOTER */}

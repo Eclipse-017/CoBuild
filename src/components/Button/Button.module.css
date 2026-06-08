@@ -7,8 +7,10 @@
     --btn-border-raduis: 0.8em;
     --btn-bg-color: hsl(219, 78%, 39%);
     --btn-bg-color-hover: hsl(219, 78%, 49%);
-    --btn-bg-color-alt: var(--scheme-clr);
-    --btn-bg-color-alt-hover: var(--scheme-clr-hover);
+    --btn-bg-color-active: hsl(219, 78%, 59%);
+    --btn-bg-color-alt: hsl(224, 86%, 14%);
+    --btn-bg-color-alt-hover: hsl(224, 86%, 24%);
+    --btn-bg-color-alt-active: hsl(224, 86%, 34%);
     --btn-fg-color: #ffffff;
     --btn-fg-color-alt: #ffffff;
     --btn-font-size: 0.8rem;
@@ -27,7 +29,10 @@ button{
 
     &:hover{
         background-color: var(--btn-bg-color-hover);
-        transform: scale(1.05);
+    }
+
+    &:active{
+        transform: scale(0.95);
     }
 
     &.btn-alt{

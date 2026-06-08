@@ -15,43 +15,11 @@
 }
 
 @media (max-width: 800px){
-
-    .form-section{
+    
+    .main-section{
+        --sec-padding-block: 10cqw;
+        --sec-padding-inline: 8cqw;
         --sec-row-gap: 8cqw;
     }
 
 }
-
-@media (max-width: 600px){
-
-    .main-section{
-        --sec-padding-block: 10cqw;
-        --sec-padding-inline: 8cqw;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
