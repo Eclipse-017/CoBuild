@@ -24,8 +24,8 @@ function HeroSection() {
               Through Data
             </h1>
             <p>
-              Understand the planets not just by name, but by measurable
-              facts. From size and mass to gravity and density, this page
+              Understand the planets not just by name, but by measurable <br />
+              facts. From size and mass to gravity and density, this page<br />
               breaks down the solar system in a clear, data-driven way.
             </p>
 
