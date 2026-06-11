@@ -34,7 +34,7 @@
     gap: 30px;
 }
 
-h1 {
+.hero-content h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -42,13 +42,14 @@ h1 {
     color: #FFFFFF;
 }
 
-p {
+.hero-content p {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 160%;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    width: 45ch;
 }
 
 
