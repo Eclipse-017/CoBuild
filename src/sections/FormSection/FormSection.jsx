@@ -112,7 +112,7 @@ function FormSection(){
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     return(
-        <MainSection className="form-section">
+        <MainSection className="form-section" id="form-section-id">
             <HeadingTwo 
                 className="form-heading" 
                 title="Have Questions About Planetary Science?" 

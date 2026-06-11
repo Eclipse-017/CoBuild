@@ -14,13 +14,11 @@ function HeroSection() {
       </header>
 
       {/* HERO SECTION */}
-      <main>
         <section className="hero-section">
 
           <div className="hero-content">
             <h1>
-              Explore Our Solar System<br />
-              Through Data
+              Explore Our Solar System Through Data
             </h1>
             <p>
               Understand the planets not just by name, but by measurable
@@ -29,8 +27,8 @@ function HeroSection() {
             </p>
 
             <div className="buttons">
-              <Button>Explore the Data</Button>
-              <Button className='btn-alt'>Contact Us</Button>
+              <Button> <a href="#image-section-id">Explore the Data</a></Button>
+              <Button className='btn-alt'> <a href="#form-section-id">Contact Us</a></Button>
             </div>
           </div>
 
@@ -39,7 +37,6 @@ function HeroSection() {
           </div>
 
         </section>
-      </main>
     </> );           
 }
 

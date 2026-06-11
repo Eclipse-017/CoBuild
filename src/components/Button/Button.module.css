@@ -53,6 +53,11 @@ button{
     &.btn-long{
         min-width: var(--btn-min-width-long);        
     }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 600px){

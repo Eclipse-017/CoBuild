@@ -14,7 +14,7 @@ import FooterSection from './sections/FooterSection/FooterSection'
 function App() {
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
 
       <main>
         <VideoSection src='/public/video/video.mp4'/>

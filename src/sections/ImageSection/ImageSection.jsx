@@ -25,7 +25,7 @@ const ImageSection = () => {
   }, []);
 
   return (
-    <MainSection  className="image-section">
+    <MainSection  className="image-section" id="image-section-id">
         <HeadingTwo 
           className="image-heading"
           title="Visualizing the Differences Between Planets"
