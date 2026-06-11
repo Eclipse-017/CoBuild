@@ -1,6 +1,33 @@
 import "./FooterSection.css";
 
 const FooterSection = () => {
+  const students = [
+    {
+      name: "Abdulsalam",
+      github: "",
+    },
+    {
+      name: "Esther",
+      github: "",
+    },
+    {
+      name: "Richard",
+      github: "",
+    },
+    {
+      name: "Silver",
+      github: "",
+    },
+    {
+      name: "Abayomi",
+      github: "",
+    },
+    {
+      name: "Tosin",
+      github: "",
+    },
+  ];
+
   return (
     <>
       <footer className="footer-section">
@@ -8,9 +35,19 @@ const FooterSection = () => {
           <h4 className="heading">About</h4>
 
           <p className="heading-description">
-            The group members who worked on this project are Abdulsalam,
-            Richard, Esther, Silver, Abayomi, Tosin.
+            The group members who worked on this project are:
           </p>
+
+          <nav className="students-nav">
+            <ul className="student-links">
+                {
+                    students.map(({name, github}, index) => (
+                        <li className="student-link" key={index}><a href={github}>{name}</a></li>
+                    ))
+                }
+            </ul>
+          </nav>
+
           <hr className="line" />
           <div>
             <p className="about-info">
