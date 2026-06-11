@@ -13,7 +13,7 @@ import VideoSection from './sections/VideoSection/VideoSection'
 function App() {
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
 
       <main>
         <VideoSection src='/public/video/video.mp4'/>

@@ -1,8 +1,8 @@
 import './MainSection.css'
 
-function MainSection({className, children}){
+function MainSection({className, children, id}){
     return(
-        <section className={`main-section ${className}`}>
+        <section id={id} className={`main-section ${className}`}>
             {children}
         </section>
     )
