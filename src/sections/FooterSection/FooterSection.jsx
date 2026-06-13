@@ -31,7 +31,7 @@ const FooterSection = () => {
 
   return (
     <>
-      <footer className="footer-section">
+      <footer className="footer-section" aria-label="Site Footer">
         <MainSection>
           <div>
             <h4 className="heading">About</h4>
@@ -40,11 +40,14 @@ const FooterSection = () => {
               The group members who worked on this project are:
             </p>
 
-            <nav className="students-nav">
+            <nav className="students-nav" aria-describedby="team-list-desc">
               <ul className="student-links">
                   {
                       students.map(({name, github}, index) => (
-                          <li className="student-link" key={index}><a href={github} target="_blank">{name}</a></li>
+                          <li className="student-link" key={index}>
+                            <a href={github} target="_blank" rel="noopener noreferrer"
+                              aria-label={`${name}'s GitHub Profile (opens in new tab)`}>{name}</a>
+                          </li>
                       ))
                   }
               </ul>
@@ -52,23 +55,27 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <hr className="line" />
+            <hr className="line" role="presentation"/>
 
             <div>
               <p className="about-info">
                 &#169; 2026 Designed by{" "}
-                <a href="https://amakandukwu.com/">Amaka </a> &{" "}
-                <a href="https://www.linkedin.com/in/ifeomaokocha">Ifeoma A.</a>
+                <a href="https://amakandukwu.com/" target="_blank" rel="noopener noreferrer">Amaka </a> &{" "}
+                <a href="https://www.linkedin.com/in/ifeomaokocha" target="_blank" rel="noopener noreferrer">Ifeoma A.</a>
               </p>
             </div>
 
             <div className="container">
               <div>
-                <span>Built by <a href="https://github.com/Eclipse-017/CoBuild">Phoenix Group 26.</a></span>
+                <span>Built by 
+                    <a href="https://github.com/Eclipse-017/CoBuild" target="_blank" rel="noopener noreferrer"
+                      aria-label="Phoenix Group 26 GitHub Repository (opens in new tab)">
+                      Phoenix Group 26.</a></span>
                 <span id="copyright">All rights reserved</span>
               </div>
               <div>
-                <a href="https://tsacademyonline.com/" target="_blank" className="ts-link">
+                <a href="https://tsacademyonline.com/" target="_blank" rel="noopener noreferrer" className="ts-link"
+                  aria-label="TS Academy's Website (opens in new tab)">
                   TSAcademy
                 </a>
               </div>

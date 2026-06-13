@@ -8,16 +8,24 @@ function VideoSection({
     type="video/mp4", desc="The Planets In Our Solar System"}){
 
     return (
-        <MainSection className='video-section'>
+        <MainSection className='video-section' aria-label="Educational Media Section">
             <div className='left'>
                 <figure>
-                    <video autoPlay muted loop controls className='media-border-radius'>
+                    <video 
+                        autoPlay 
+                        muted 
+                        loop 
+                        controls 
+                        className='media-border-radius'
+                        aria-label="CGI visualization of the major planets orbiting the sun inside our solar system"
+                    >
                         <source src={src} type={type} />   
 
-                        Video not supported by browser
+                        {/* Video not supported by browser */}
+                        Your browser does not support the video tag.
                     </video>
 
-                    <figcaption>{desc}</figcaption>
+                    <figcaption aria-hidden="true">{desc}</figcaption>
                 </figure>
             </div>
 
@@ -39,4 +47,4 @@ function VideoSection({
 
 }
 
-export default VideoSection
+export default VideoSection;

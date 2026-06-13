@@ -25,7 +25,7 @@ const ImageSection = () => {
   }, []);
 
   return (
-    <MainSection  className="image-section" id="image-section-id">
+    <MainSection  className="image-section" id="image-section-id" aria-label="Planetary Gallery and Visual Statistics">
         <HeadingTwo 
           className="image-heading"
           title="Visualizing the Differences Between Planets"
@@ -33,14 +33,15 @@ const ImageSection = () => {
           Visual comparisons help highlight how vastly different terrestrial
           planets are from gas giants and ice giants."/>
           
-        <PlanetGrid>
+        <PlanetGrid aria-label="Planets of our Solar System">
           {
             planets.map((planet, index) => (
               <PlanetCard index={index}
               src={planet.image} 
-              alt={planet.planet}
+              alt={`Visual profile of the planet ${planet.planet}`}
               name={planet.planet}
               distance={planet.distanceFromSun}
+              role="listitem"
               />
             ))
           }
