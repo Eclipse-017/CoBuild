@@ -64,7 +64,7 @@ const FooterSection = () => {
 
             <div className="container">
               <div>
-                <span>Built by Phoenix Group 26. </span>
+                <span>Built by <a href="https://github.com/Eclipse-017/CoBuild">Phoenix Group 26.</a></span>
                 <span id="copyright">All rights reserved</span>
               </div>
               <div>
