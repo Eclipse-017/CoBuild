@@ -38,12 +38,14 @@
             h1{
                 width: 17ch;
                 font-size: 4em;
+                font-weight: 700;
             }
             
             p{
                 width: 46ch;
-                font-size: 1.4em;
+                font-size: 1.2em;
                 line-height: 2.5ch;
+                font-weight: 400;
             }
 
             .buttons{
@@ -203,7 +205,7 @@
                 }
                 
                 p{
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     width: 100%;
                 }
                 
@@ -247,7 +249,7 @@
                 }
                 
                 p{
-                    font-size: 5cqw;
+                    font-size: 4.6cqw;
                 }
             }
         }
