@@ -57,6 +57,41 @@ The reusable components, application integration, and were overseen by **Richard
 
 # How to run the Project locally
 
+Before getting started, ensure that Node.js is installed on your computer. You can verify the installation by running:
+node -v
+
+If Node.js is not installed, download and install it from the official website.
+
+### Step 1: Open Your Terminal
+Open your terminal or command prompt.
+
+### Step 2: Clone the Repository
+
+Navigate to the directory where you would like to save the project and run:
+git clone <repository-url>
+
+### Step 3: Navigate to the Project Directory
+Move into the project's root directory (the directory containing the package.json file):
+cd <project-folder-name>
+
+### Step 4: Install Dependencies
+Install all required project dependencies by running:npm install
+
+This command will create a node_modules folder containing the packages required for the application to run.
+
+Additionally, the project uses Yup for form validation. If it is not included in the installed dependencies, install it separately using:
+npm install yup
+
+### Step 5: Start the Development Server
+Since the application is built with Vite, start the local development server with:
+npm run dev
+
+### Step 6: Open the Application in Your Browser
+After the server starts successfully, the terminal will display a local URL similar to:
+http://localhost:5173/
+
+Open the link by Copying and pasting the address into your web browser. The application should now be running locally and ready for development.
+
 
 # Conclusion
 
