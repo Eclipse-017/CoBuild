@@ -1,10 +1,10 @@
 import './PlanetCard.css'
 
 
-function PlanetCard({className, src, alt, name, index, distance}){
+function PlanetCard({className, src, alt, name, index, distance, ...props}){
     return (
         <div className={`planet-card ${className}`}>
-            <figure key={index} className='planet-figure'>
+            <figure key={index} className='planet-figure' {...props}>
                 <div className='planet-image-container'>
                     <img src={src} className='planet-image'
                         alt={alt || "Planet Card with planet information"} />

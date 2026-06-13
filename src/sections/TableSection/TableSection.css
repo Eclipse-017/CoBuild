@@ -3,15 +3,33 @@ table {
     font-size: 0.8rem;
     border: 2px solid #ffffff;
     margin: 0 !important;
-    border-collapse: collapse;
-
+    
+    /* Changed to separate to allow individual cell border-radii */
+    border-collapse: separate;
+    border-spacing: 0;
+    
     thead {
         background: #164baf;
         font-weight: 700;
         font-style: bold;
         text-align: center;
         color: #ffffff;
-        border-radius: 10px;
+    }
+
+    thead tr.head-row th:first-child {
+        border-top-left-radius: 20px;
+    }
+
+    thead tr.head-row th:last-child {
+        border-top-right-radius: 20px;
+    }
+
+    tbody > tr:last-child > th:first-child {
+        border-bottom-left-radius: 20px;
+    }
+
+    tbody > tr:last-child > td:last-child {
+        border-bottom-right-radius: 20px;
     }
 
     tbody {
@@ -24,24 +42,8 @@ table {
         border: 2px solid #ffffff;
     }
 
-    th{
+    th {
         border: 1px solid #ffffff;
-    }
-
-    th:first-child {
-        border-radius: 20px 0 0 0;
-    }
-
-    th:last-child {
-        border-radius: 0 20px 0 0;
-    }
-
-    tbody>tr:last-child>td:first-child {
-        border-radius: 0 0 0 20px;
-    }
-
-    tbody>tr:last-child>td:last-child {
-        border-radius: 0 0 20px 0;
     }
 
     .topic {
@@ -51,6 +53,7 @@ table {
 
     .content {
         background: #f2f7ff;
+        text-align: center;
     }
 
     .topic,
