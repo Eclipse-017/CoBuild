@@ -10,10 +10,10 @@ Team Co-Build is the 26th group assigned by TS Academy Phoenix  to participate i
 # Team Members
 1. Ajibade Abdulsalam - Team Lead
 2. Esther Okpor https://github.com/Estimilita/Estimilita - Asst Team Lead 1
-3. Richard Okafor https://github.com/Estimilita/Estimilita - Asst Team Lead 2
+3. Richard Okafor https://github.com/Rekahdo - Asst Team Lead 2
 4. Adebayo Adebanjo https://github.com/silver-orioha
 5. Silver Orioha https://github.com/bayoradebajo
-6. Tosin Abdul
+6. Tosin Abdul https://github.com/tosinabdul2-sudo
 
 # Team Contributions
 
@@ -36,7 +36,7 @@ The Image Section was implemented by **Esther Okpor**. She handled the layout an
 
 ### 3. Video Section
 
-The Video Section was developed by **Richard Okafor**. He integrated the video component and designed the surrounding content layout to provide users with an immersive educational experience.
+The Video Section was developed by **Adebayo Adebanjo**. He integrated the video component and designed the surrounding content layout to provide users with an immersive educational experience.
 
 ### 4. Table Section
 
@@ -44,7 +44,7 @@ The Table Section was implemented by **Silver Orioha**. She was responsible for 
 
 ### 5. Form Section
 
-The Form Section was handled by **Adebayo Adebanjo**. He implemented the structure and styling of the user input form while ensuring consistency with the overall design language of the application.  
+The Form Section was handled by **Richard Okafor**. He implemented the structure and styling of the user input and form validation while ensuring consistency with the overall design language of the application.  
 
 ### 6. Footer Section
 
@@ -79,8 +79,8 @@ Install all required project dependencies by running:npm install
 
 This command will create a node_modules folder containing the packages required for the application to run.
 
-Additionally, the project uses Yup for form validation. If it is not included in the installed dependencies, install it separately using:
-npm install yup
+Additionally, the project uses Yup for additional form validation. If it is not included in the installed dependencies, install it separately using:
+npm i yup
 
 ### Step 5: Start the Development Server
 Since the application is built with Vite, start the local development server with:
